@@ -1,13 +1,13 @@
 todo_list = []
 
 def add_task():
-  """Adds a new task to the list."""
+  
   new_task = input("Enter a new task: ")
   todo_list.append(new_task)
   print("Task added successfully!")
 
 def view_tasks():
-  """Displays the current to-do list."""
+  
   if not todo_list:
     print("There are no tasks in the list.")
   else:
@@ -16,7 +16,7 @@ def view_tasks():
       print(f"{index+1}. {task}")
 
 def update_task():
-  """Updates an existing task in the list."""
+ 
   if not todo_list:
     print("There are no tasks to update.")
     return
@@ -32,7 +32,7 @@ def update_task():
     print("Invalid task index. Please try again.")
 
 def main():
-  """Main loop for user interaction."""
+ 
   while True:
     print("\nTo-Do List App")
     print("1. Add Task")
